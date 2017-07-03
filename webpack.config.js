@@ -1,5 +1,5 @@
 module.exports = {
-  entry: './index.jsx',
+  entry: './src/index.jsx',
   output: { path: __dirname, filename: 'bundle.js' },
   module: {
     loaders: [
@@ -9,8 +9,8 @@ module.exports = {
         exclude: /node_modules/,
         query: {
           presets: ['es2015', 'react'],
-        }
-      }
-    ]
-  }
-}
+        },
+      },
+    ],
+  },
+};
